@@ -1,0 +1,5 @@
+<%= link_to "Login to Twitter", login_path unless logged_in? %>
+<h1><%= @username %></h1>
+<ul>
+  <%= render partial: "tweet", collection: @tweets %>
+</ul>
